@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A Front-End Mentor Challenge">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 
@@ -10,12 +11,6 @@
   <link rel="stylesheet" href="./styles.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@500;600;700&display=swap" rel="stylesheet">
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
   <nav class="nav">
@@ -42,10 +37,10 @@
         <img src="./images/mobile-image-hero-1.jpg" alt="Hero" />
       </picture>
       <div class="controls">
-        <button class="btn" aria-label="Previous Slide">
+        <button class="btn" data-direction="left" aria-label="Previous Slide">
           <img src="./images/icon-angle-left.svg" alt="Previous Slide">
         </button>
-        <button class="btn" aria-label="Next Slide">
+        <button class="btn" data-direction="right" aria-label="Next Slide">
           <img src="./images/icon-angle-right.svg" alt="Next Slide">
         </button>
       </div>
@@ -63,22 +58,6 @@
       </button>
     </div>
   </main>
-
-  <!-- We are available all across the globe -->
-
-  <!-- With stores all over the world, it's easy for you to find furniture for your home or place of business. -->
-  <!-- Locally, we’re in most major cities throughout the country. Find the branch nearest you using our -->
-  <!-- store locator. Any questions? Don't hesitate to contact us today. -->
-
-  <!-- Shop now -->
-
-  <!-- Manufactured with the best materials -->
-
-  <!-- Our modern furniture store provide a high level of quality. Our company has invested in advanced technology -->
-  <!-- to ensure that every product is made as perfect and as consistent as possible. With three decades of -->
-  <!-- experience in this industry, we understand what customers want for their home and office. -->
-
-  <!-- Shop now -->
 
   <section class="grid grid--about">
     <div class="grid__item grid__item--img">
@@ -102,5 +81,6 @@
   <!--   Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. -->
   <!--   Coded by <a href="#">Your Name Here</a>. -->
   <!-- </div> -->
+  <script src="./main.js" type="module"></script>
 </body>
 </html>
