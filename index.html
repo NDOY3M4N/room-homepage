@@ -35,8 +35,8 @@
     </ul>
   </nav>
 
-  <main class="hero">
-    <div class="hero__img">
+  <main class="grid grid--hero">
+    <div class="grid__item grid__item--img">
       <picture>
         <source srcset="./images/desktop-image-hero-1.jpg" media="(min-width: 600px)" />
         <img src="./images/mobile-image-hero-1.jpg" alt="Hero" />
@@ -50,7 +50,7 @@
         </button>
       </div>
     </div>
-    <div class="hero__desc">
+    <div class="grid__item grid__item--content">
       <h1>Discover innovative ways to decorate</h1>
 
       <p>We provide unmatched quality, comfort, and style for property owners across the country. Our experts combine form and function in bringing your vision to life. Create a room in your own style with our collection and make your property a reflection of you and what you love.</p>
@@ -63,7 +63,6 @@
       </button>
     </div>
   </main>
-
 
   <!-- We are available all across the globe -->
 
@@ -81,12 +80,23 @@
 
   <!-- Shop now -->
 
-  <!-- About our furniture -->
-
-  <!-- Our multifunctional collection blends design and function to suit your individual taste. -->
-  <!-- Make each room unique, or pick a cohesive theme that best express your interests and what -->
-  <!-- inspires you. Find the furniture pieces you need, from traditional to contemporary styles -->
-  <!-- or anything in between. Product specialists are available to help you create your dream space. -->
+  <section class="grid grid--about">
+    <div class="grid__item grid__item--img">
+      <img src="./images/image-about-dark.jpg" alt="Furniture in the dark">
+    </div>
+    <div class="grid__item grid__item--content">
+      <p class="lead">About our furniture</p>
+      <p>
+        Our multifunctional collection blends design and function to suit your individual taste.
+        Make each room unique, or pick a cohesive theme that best express your interests and what
+        inspires you. Find the furniture pieces you need, from traditional to contemporary styles
+        or anything in between. Product specialists are available to help you create your dream space.
+      </p>
+    </div>
+    <div class="grid__item grid__item--img">
+      <img src="./images/image-about-light.jpg" alt="Furniture in the light">
+    </div>
+  </section>
 
   <!-- <div class="attribution"> -->
   <!--   Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. -->
