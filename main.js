@@ -51,15 +51,15 @@ const carouselImgMobile = document.querySelector('.grid--hero picture img')
 // position
 let position = 0
 
-btnCarouselRight.addEventListener('click', () => {
+function nextSlide() {
   position++
   showSlides()
-})
+}
 
-btnCarouselLeft.addEventListener('click', () => {
+function prevSlide() {
   position--
   showSlides()
-})
+}
 
 function showSlides () {
   if (position === carouselItems.length) position = 0
@@ -76,5 +76,15 @@ function updateCarousel(itemToShow) {
   carouselBody.innerText = itemToShow.body
 }
 
-// Show slide on initial load
+// Change slide using the buttons
+btnCarouselRight.addEventListener('click', nextSlide)
+btnCarouselLeft.addEventListener('click', prevSlide)
+
+// Change slide using the keyboard
+document.addEventListener('keydown', (event) => {
+  if (event.code === 'ArrowLeft') prevSlide()
+  else if (event.code === 'ArrowRight') nextSlide()
+});
+
+// Show a slide on initial load
 showSlides()
