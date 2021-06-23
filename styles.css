@@ -71,6 +71,10 @@ p {
   background-color: var(--very-dark-gray);
 }
 
+.btn:focus {
+  outline: 2px dashed var(--very-dark-gray);
+}
+
 .btn--light {
   margin-top: 32px;
   background-color: transparent;
@@ -78,12 +82,12 @@ p {
   display: inline-flex;
   color: var(--very-dark-gray);
   border-left: 2px solid transparent;
-  transition: border-left-color 0.5s ease-in-out;
+  transition: opacity 0.5s ease-in-out;
 }
 
 .btn--light:hover {
   background-color: transparent;
-  border-left-color: var(--very-dark-gray);
+  opacity: 0.5;
 }
 
 .btn__text {
@@ -133,7 +137,7 @@ p {
   padding: 48px 32px;
   align-items: center;
   justify-content: flex-end;
-  gap: 32px;
+  gap: 12px;
   transform: translateY(-100%);
   opacity: 0;
   pointer-events: none;
@@ -142,6 +146,11 @@ p {
 
 .nav__links a {
   position: relative;
+  padding: 4px 8px;
+}
+
+.nav__links a:focus {
+  outline: 2px dashed var(--very-dark-gray);
 }
 
 .nav__links a::before {
